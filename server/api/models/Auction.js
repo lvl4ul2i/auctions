@@ -8,6 +8,11 @@
 module.exports = {
 
   attributes: {
+    //relationship
+    lots: {
+      collection: 'lot',
+      via: 'auctioneer'
+    },
 
     place : { type: 'string' },
 

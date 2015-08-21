@@ -8,6 +8,9 @@
 module.exports = {
 
   attributes: {
+    auctioneer: {
+      model: 'auction'
+    },
 
     name : { type: 'string' },
 
