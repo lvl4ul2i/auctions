@@ -1,1 +1,19 @@
-{{outlet}}
+<h2>Auctions list</h2>
+
+{{#each model as |auctions|}}
+  Name:        {{auctions.name}}<br />
+  Place:       {{auctions.place}}<br />
+  Description: {{auctions.description}}<br />
+  Date:        {{auctions.date}}<br />
+  Concept:     {{auctions.concept}}<br />
+
+  <h2>Lots:</h2>
+
+  {{#each auctions.lots as |lots|}}
+    Number:         {{lots.number}}<br />
+    Name:           {{lots.name}}<br />
+    Description:    {{lots.description}}<br />
+    Base Price:     {{lots.basePrice}}<br />
+  {{/each}}
+{{/each}}
+
