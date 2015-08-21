@@ -9,15 +9,12 @@
 
   <h2>Lots:</h2>
 
-  {{#owl-carousel autoplay=3000 pagination="true"}}
+  {{#owl-carousel autoplay=3000 pagination=true}}
   {{#each auctions.lots as |lots|}}
-  <div class="item">
-    Number:         {{lots.number}}<br />
-    Name:           {{lots.name}}<br />
-    Description:    {{lots.description}}<br />
-    Base Price:     {{lots.basePrice}}<br />
-  </div>
+    <div class="item item-box">
+        <h1>Lot {{lots.number}}</h1>
+        <p>Name:   {{lots.name}}</p>
+    </div>
   {{/each}}
   {{/owl-carousel}}
 {{/each}}
-
