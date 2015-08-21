@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('auction');
+  this.route('lot');
 });
 
 export default Router;
